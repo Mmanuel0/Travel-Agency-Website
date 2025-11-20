@@ -1,0 +1,530 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --general-padding: 6.25rem 4.75rem;
+  --button-color: #ff6e0e;
+  --website-white: #fffffc;
+  --button-text: 1.125rem;
+  --background-color: #fffffc;
+  --text-color: #fffffc;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.6rem, 2vw + 2.6rem, 4rem);
+  letter-spacing: -2px;
+  font-weight: 700;
+  line-height: 5.25rem;
+  color: var(--text-color);
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.3rem, 1.5vw + 2rem, 3.2rem);
+  line-height: 3.8rem;
+  font-weight: 550;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.2rem, 0.6vw + 1.2rem, 2rem);
+}
+
+h4 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.1rem, 0.2vw + 1rem, 2rem);
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+.title-span {
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  font-weight: 450;
+  font-size: 1rem;
+  color: var(--text-color);
+  border-radius: 2rem;
+  background-color: hsla(21, 26%, 87%, 0.253);
+  padding: 8px 18px;
+  width: fit-content;
+}
+
+ul {
+  list-style: none;
+}
+
+.button-container button {
+  border: none;
+  background-color: var(--button-color);
+  padding: 1rem 2rem;
+  font-size: var(--button-text);
+  color: var(--website-white);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.website-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation-and-hero {
+  width: 100%;
+  min-height: 110vh;
+  background-position: center;
+  background-color: none;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/hero.jpg);
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 4.75rem;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  column-gap: 3rem;
+}
+
+.nav-links {
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  padding: var(--general-padding);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.2rem;
+  row-gap: 1.8rem;
+  width: 42%;
+}
+
+.hero-content p {
+  color: var(--website-white);
+}
+
+.two-buttons {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+}
+
+.two-buttons button:last-child {
+  border: none;
+  background-color: hsla(21, 25%, 87%, 0.322);
+  padding: 1rem 2rem;
+  font-size: var(--button-text);
+  color: #fffffc;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.two-buttons button {
+  border: none;
+  background-color: var(--button-color);
+  padding: 1rem 2rem;
+  font-size: var(--button-text);
+  color: var(--website-white);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+/* offer section */
+
+.offer-listing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--general-padding);
+  row-gap: 3rem;
+}
+
+.title-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.81rem;
+}
+
+.title-description span {
+  color: #ff6e0e;
+}
+
+.card-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 3rem;
+}
+
+.card-listings {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+}
+
+.card-item {
+  border-radius: 1.2rem;
+  color: #fffffc;
+  padding: 2rem 0 0 2rem;
+  width: 18rem;
+  height: 31.86rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  row-gap: 3rem;
+}
+
+.card-item:first-child {
+  background-image: linear-gradient(
+      rgba(255, 145, 1, 0.616),
+      rgba(201, 119, 13, 0.267)
+    ),
+    url(./images/tours-01);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-item:nth-child(2) {
+  background-image: linear-gradient(
+      rgba(255, 145, 1, 0.616),
+      rgba(201, 119, 13, 0.267)
+    ),
+    url(./images/tours-02);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-item:nth-child(3) {
+  background-image: linear-gradient(
+      rgba(255, 145, 1, 0.616),
+      rgba(201, 119, 13, 0.267)
+    ),
+    url(./images/tours-03);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-item:last-child {
+  background-image: linear-gradient(
+      rgba(255, 145, 1, 0.616),
+      rgba(201, 119, 13, 0.267)
+    ),
+    url(./images/tours-04);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* about section */
+.about {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff7ec;
+  padding: var(--general-padding);
+}
+
+.left-about {
+  width: 50%;
+  text-align: center;
+}
+
+.left-about img {
+  height: 750px;
+}
+
+.right-about {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.right-top-about {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.right-top-about span {
+  color: #ff6e0e;
+}
+
+.right-mid-about {
+  display: flex;
+  flex-direction: row;
+  column-gap: 4rem;
+  align-items: end;
+}
+
+.l1 {
+  border-radius: 2rem;
+}
+
+.l1 img {
+  border-radius: 2rem;
+}
+
+.r1 span {
+  color: #ff6e0e;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.6rem;
+}
+
+.r1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 3rem;
+}
+
+.ratings-about {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+}
+
+.image-containers img {
+  border-radius: 2rem;
+}
+
+.image-containers {
+  display: flex;
+  flex-direction: row;
+  column-gap: -5rem;
+}
+
+.image-containers img:last-child {
+  margin-left: -15px;
+}
+
+.why-us {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+  padding: var(--general-padding);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/why-us.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.why-us-right {
+  color: #fffffc;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.why-us-left {
+}
+
+.reasons-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #fffffc;
+  border-radius: 2rem;
+  padding: 3rem 2.5rem;
+  width: 70%;
+  row-gap: 2rem;
+}
+
+.reason-item-list {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.1px solid #1409011a;
+  padding-bottom: 2rem;
+  row-gap: 1rem;
+}
+
+.reason-item-list:last-child {
+  border-bottom: none;
+}
+
+.reason-item-list span {
+  color: #ff6e0e;
+  font-size: 3rem;
+}
+
+/* Testimonials */
+
+.testimonials {
+  padding: 15rem 4.75rem 6.25rem 4.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.5rem;
+}
+
+.testimonials span {
+  color: #ff6e0e;
+}
+
+.quote-span span {
+  font-size: 6rem;
+}
+
+.testimonials p {
+  width: 50%;
+  text-align: center;
+}
+
+.the-person {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1.2rem;
+}
+
+.the-person img {
+  width: 100px;
+  height: 100px;
+  border-radius: 20rem;
+}
+
+/* Start Adventure */
+.start-adventure {
+  position: relative;
+  overflow: visible;
+  display: flex;
+  flex-direction: row;
+  padding: 6.25rem 4.75rem 0 4.75rem;
+  background-color: #fb5607;
+  justify-content: space-between;
+}
+
+.right-adventure img {
+  width: 100%;
+  display: block;
+  margin-top: -190px;
+}
+
+.left-adventure {
+  color: #fffffc;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.left-adventure img {
+  position: absolute;
+  left: 400px;
+}
+
+.left-adventure button {
+  background-color: #fffffc;
+  color: #fb5607;
+}
+
+/* footer section */
+
+.footer-section {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 6.25rem 4.75rem 0 4.75rem;
+  background-color: #001219;
+  color: #fffffc;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: solid 1px #fff7ec;
+  padding-bottom: 4rem;
+  column-gap: 2rem;
+}
+
+.footer1 {
+  height: auto;
+  /* width: 35%; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.footer1:first-child {
+  width: 30%;
+}
+
+.footer1:first-child img {
+  width: 200px;
+}
+
+.footer1:nth-child(3) {
+  width: 25%;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.fnav-links {
+  cursor: pointer;
+}
+
+.two-container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.5rem;
+  cursor: pointer;
+}
+
+.two-container span {
+  color: #fb5607;
+}
+
+.footer-end {
+  text-align: center;
+  padding: 1rem 0;
+}
